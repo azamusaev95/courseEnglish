@@ -1,0 +1,28 @@
+body {
+  padding: 20px;
+}
+.whatsappCourseContainer {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.shareButton {
+  color: #fff;
+  background-color: #25d366;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pageContent {
+  width: 90%;
+}
+
+.siliconImg {
+  width: 90%;
+}

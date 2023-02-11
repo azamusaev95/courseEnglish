@@ -1,0 +1,198 @@
+#page-alphabet {
+  margin: 10px -15px;
+  overflow: hidden;
+}
+#page-alphabet td.small,
+#page-alphabet td.transcription {
+  color: #7d7d7d;
+}
+#page-alphabet td.letters,
+#page-alphabet td.prescription {
+  font-weight: bold;
+  font-size: 1.2em;
+  position: relative;
+}
+#page-alphabet td.prescription {
+  font-family: 'Bad Script', cursive;
+}
+#page-alphabet tr {
+  text-align: left;
+}
+#page-alphabet tr:hover .letter {
+  color: #000;
+}
+#page-alphabet tr:hover .sound::before {
+  color: #ff9900;
+}
+#page-alphabet td.pointer {
+  cursor: pointer;
+}
+#page-alphabet .sound {
+  padding-left: 18px;
+}
+#page-alphabet .sound::before {
+  content: "\e038";
+  font-family: "Glyphicons Halflings";
+  position: absolute;
+  top: 16%;
+  left: 5%;
+  width: 18px;
+  font-weight: normal;
+  height: auto;
+  font-size: 19px !important;
+  color: #b8b8b8;
+}
+#page-alphabet .letnum {
+  position: relative;
+  color: #fff;
+  width: 6px;
+  text-align: center;
+  padding: 0;
+  vertical-align: middle;
+}
+#page-alphabet .letnum div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 30%;
+}
+#page-alphabet .letcolor0 {
+  background-color: #ff2000;
+}
+#page-alphabet .letcolor1 {
+  background-color: #025000;
+}
+.letline {
+  height: 90px;
+  width: 20px;
+  display: inline-block;
+  background: #025000;
+  background: -moz-linear-gradient(top, #025000 0%, #025000 50%, #ff2000 50%, #ff2000 100%);
+  background: -webkit-linear-gradient(top, #025000 0%, #025000 50%, #ff2000 50%, #ff2000 100%);
+  background: linear-gradient(to bottom, #025000 0%, #025000 50%, #ff2000 50%, #ff2000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#025000', endColorstr='#dbc100', GradientType=0);
+}
+#slide-alphabet .large {
+  font-size: 5em;
+}
+#slide-alphabet .owl-next,
+#slide-alphabet .owl-prev {
+  top: 43%;
+}
+#slide-alphabet .sound {
+  font-size: 1.5em;
+}
+#slide-alphabet .item {
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+#slide-alphabet .showtrans {
+  margin-top: 15px;
+}
+#audio-alphabet {
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+}
+#audio-alphabet div {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  padding: 15px 10px;
+  position: relative;
+  transition: background-color 500ms;
+}
+#audio-alphabet div:hover {
+  background-color: #eeeeee;
+  color: #000;
+}
+#audio-alphabet div.bggreen {
+  background-color: #009c07;
+  color: #fff;
+}
+#audio-alphabet div.bgred {
+  background-color: #e04121;
+  color: #fff;
+}
+.lettersound {
+  display: none;
+}
+.current {
+  display: block;
+}
+.backstart {
+  display: none;
+  margin-right: 5px;
+}
+button:focus {
+  background: #fff;
+}
+#setfont p {
+  position: relative;
+  padding-left: 40px;
+}
+#setfont .cursive {
+  font-family: 'Bad Script', cursive;
+  top: 17px;
+}
+#setfont .normal {
+  top: 16px;
+}
+#setfont .normal,
+#setfont .cursive {
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  left: 10px;
+  color: #7d7d7d;
+  line-height: 1px;
+}
+#setcolum {
+  text-align: right;
+}
+#setfont .small,
+#setcolum .small {
+  padding: 0 2px 5px 2px;
+  color: #7d7d7d;
+}
+@media (max-width: 767px) {
+  #setcolum {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+@media (min-width: 600px) {
+  #page-alphabet td {
+    line-height: 50px;
+  }
+  #page-alphabet td.letters {
+    font-size: 2.4em;
+  }
+  #page-alphabet td.prescription {
+    font-size: 2em;
+  }
+  #page-alphabet td.transcription,
+  #page-alphabet td.trans {
+    font-size: 1.2em;
+  }
+  #page-alphabet .sound {
+    padding-left: 35px;
+  }
+  #page-alphabet .sound::before {
+    top: 15%;
+    font-size: 23px !important;
+  }
+  #audio-alphabet .bold {
+    font-size: 2em;
+  }
+}
+@media (max-width: 379px) {
+  .letline {
+    height: 130px !important;
+  }
+  #page-alphabet .colum {
+    padding: 8px 7px;
+    font-size: 0.85em;
+  }
+}
