@@ -46,7 +46,9 @@ const linkFunction = (link) => {
   lessonsStatusCheker();
   count--;
   console.log(count);
-  linkStatusShow.innerHTML = `Cабактар ачылуусуна ${count} бөлүшүү калды`;
+  setTimeout(() => {
+    linkStatusShow.innerHTML = `Cабактар ачылуусуна ${count} бөлүшүү калды`;
+  }, 5000);
 };
 
 const lessonsStatusCheker = () => {
